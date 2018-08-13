@@ -5,14 +5,25 @@ const TileCloudControl = function() {}
 TileCloudControl.prototype.onAdd = (map) => {
   this.container = document.createElement('div')
 
-  const link = document.createElement('a')
-  link.href = 'https://tilecloud.io/'
+  const styles = {
+    width: "128px",
+    height: "auto",
+    cursor: "pointer",
+    marginLeft: "10px",
+  }
+
+  for (var style in styles) {
+    this.container.style[style] = styles[style]
+  }
 
   const img = document.createElement('img')
   img.src = 'https://tilecloud.github.io/logo/tilecloud-256x60.png'
 
-  this.container.appendChild(link)
-  link.appendChild(img)
+  this.container.appendChild(img)
+
+  this.container.on('click', () => {
+    location.href = "https://tilecloud.io/"
+  })
 
   return this.container;
 }
