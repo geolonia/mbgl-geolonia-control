@@ -4,12 +4,14 @@ const TileCloudControl = function() {}
 
 TileCloudControl.prototype.onAdd = (map) => {
   this.container = document.createElement('div')
+  this.container.className = 'mapboxgl-ctrl'
 
   const styles = {
-    width: "128px",
+    width: "96px",
     height: "auto",
     cursor: "pointer",
     marginLeft: "10px",
+    marginBottom: "10px",
   }
 
   for (var style in styles) {
@@ -18,10 +20,12 @@ TileCloudControl.prototype.onAdd = (map) => {
 
   const img = document.createElement('img')
   img.src = 'https://tilecloud.github.io/logo/tilecloud-256x60.png'
+  img.style.maxWidth = '100%'
+  img.style.display = 'block'
 
   this.container.appendChild(img)
 
-  this.container.addEventListener('click', () => {
+  img.addEventListener('click', () => {
     location.href = "https://tilecloud.io/"
   })
 
