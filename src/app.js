@@ -21,7 +21,7 @@ TileCloudControl.prototype.onAdd = (map) => {
 
   this.container.appendChild(img)
 
-  this.container.on('click', () => {
+  this.container.addEventListener('click', () => {
     location.href = "https://tilecloud.io/"
   })
 
