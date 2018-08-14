@@ -4,6 +4,7 @@
   "description": "",
   "main": "src/app.js",
   "scripts": {
+    "start": "npm run build && http-server docs/",
     "build": "parcel build src/app.js --no-cache && parcel build -d docs/dist docs/src/app.js --no-cache",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,12 +13,13 @@
     "url": "git+https://github.com/tilecloud/mapbox-gl-tilecloud-control.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/tilecloud/mapbox-gl-tilecloud-control/issues"
   },
   "homepage": "https://github.com/tilecloud/mapbox-gl-tilecloud-control#readme",
   "devDependencies": {
+    "http-server": "^0.11.1",
     "parcel": "^1.9.7"
   }
 }
