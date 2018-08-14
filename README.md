@@ -12,7 +12,7 @@ $ npm install @tilecloud/mbgl-tilecloud-control --save
 
 ## How to use
 
-```
+```node
 import TileCloudControl from '@tilecloud/mbgl-tilecloud-control'
 
 const map = new mapboxgl.Map({
