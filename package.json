@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/app.js",
   "scripts": {
-    "build": "parcel build src/app.js",
+    "build": "parcel build src/app.js --no-cache && parcel build -d docs/dist docs/src/app.js --no-cache",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
