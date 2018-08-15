@@ -8,4 +8,4 @@ const map = new mapboxgl.Map({
 });
 map.addControl(new mapboxgl.NavigationControl());
 map.addControl(new mapboxgl.GeolocateControl());
-map.addControl(new tcControl(), 'bottom-left');
+map.addControl(new tcControl());
