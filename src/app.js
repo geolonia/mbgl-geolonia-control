@@ -2,7 +2,7 @@
 
 const TileCloudControl = function() {}
 
-TileCloudControl.prototype.onAdd = (map) => {
+TileCloudControl.prototype.onAdd = () => {
   this.container = document.createElement('div')
   this.container.className = 'mapboxgl-ctrl'
 
@@ -14,7 +14,7 @@ TileCloudControl.prototype.onAdd = (map) => {
     marginBottom: "10px",
   }
 
-  for (var style in styles) {
+  for (const style in styles) {
     this.container.style[style] = styles[style]
   }
 
@@ -26,7 +26,7 @@ TileCloudControl.prototype.onAdd = (map) => {
   this.container.appendChild(img)
 
   img.addEventListener('click', () => {
-    location.href = "https://tilecloud.io/"
+    window.location.href = "https://tilecloud.io/"
   })
 
   return this.container;
@@ -36,9 +36,7 @@ TileCloudControl.prototype.onRemove = () => {
   this.container.parentNode.removeChild(this.container)
 }
 
-TileCloudControl.prototype.getDefaultPosition = () => {
-  return 'bottom-left'
-}
+TileCloudControl.prototype.getDefaultPosition = () => 'bottom-left'
 
 if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
   module.exports = TileCloudControl;
