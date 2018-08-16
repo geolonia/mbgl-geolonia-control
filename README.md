@@ -1,6 +1,7 @@
 # mbgl-tilecloud-control
 
 [![Build Status](https://travis-ci.org/tilecloud/mbgl-tilecloud-control.svg?branch=master)](https://travis-ci.org/tilecloud/mbgl-tilecloud-control)
+[![npm version](https://badge.fury.io/js/%40tilecloud%2Fmbgl-tilecloud-control.svg)](https://badge.fury.io/js/%40tilecloud%2Fmbgl-tilecloud-control)
 
 This is a Mapbox GL JS plugin to display our trademark on map.
 
