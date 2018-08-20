@@ -1,5 +1,7 @@
 "use strict"
 
+import 'babel-polyfill'
+
 class TileCloudControl {
   onAdd() {
     this.container = document.createElement('div')
