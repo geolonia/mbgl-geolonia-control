@@ -6,16 +6,19 @@ class TileCloudControl {
     this.container.className = 'mapboxgl-ctrl'
 
     const img = document.createElement('img')
-    img.src = 'https://tilecloud.github.io/logo/tilecloud-map-icon.png'
-    img.style.maxWidth = '100%'
+    img.src = 'https://tilecloud.github.io/logo/tilecloud-256x256.png'
+    img.style.width = '16px'
+    img.style.height = '16px'
     img.style.display = 'block'
     img.style.cursor = 'pointer'
+    img.alt = "TileCloud"
 
-    this.container.appendChild(img)
+    const link = document.createElement('a')
+    link.href = "https://tilecloud.io/"
+    link.appendChild(img)
+    link.title = "自由な地図のための地図専用ホスティングサービス"
 
-    img.addEventListener('click', () => {
-      window.location.href = "https://tilecloud.io/"
-    })
+    this.container.appendChild(link)
 
     return this.container;
   }

@@ -1,5 +1,5 @@
 import ForkMe from '@tilecloud/mbgl-fork-me-control'
-import TileCloudControl from '../dist/mbgl-tilecloud-control'
+import TileCloudControl from '../src/'
 
 const map = new mapboxgl.Map({
   container: 'map',
