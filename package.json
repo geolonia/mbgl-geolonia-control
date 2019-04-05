@@ -1,6 +1,6 @@
 {
   "name": "@tilecloud/mbgl-tilecloud-control",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "description": "",
   "main": "dist/mbgl-tilecloud-control.js",
   "scripts": {
@@ -22,10 +22,10 @@
   },
   "homepage": "https://github.com/tilecloud/mbgl-tilecloud-control#readme",
   "devDependencies": {
-    "@tilecloud/mbgl-fork-me-control": "^0.2.4",
-    "eslint": "^5.4.0",
+    "@tilecloud/mbgl-fork-me-control": "^0.2.5",
+    "eslint": "^5.16.0",
     "http-server": "^0.11.1",
     "microbundle": "^0.6.0",
-    "parcel": "^1.9.7"
+    "parcel": "^1.12.3"
   }
 }
