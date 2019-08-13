@@ -1,22 +1,22 @@
 "use strict"
 
-class TileCloudControl {
+class GeoloniaControl {
   onAdd() {
     this.container = document.createElement('div')
     this.container.className = 'mapboxgl-ctrl'
 
     const img = document.createElement('img')
-    img.src = 'https://tilecloud.github.io/logo/tilecloud-256x256.png'
+    img.src = 'https://geolonia.github.io/logo/geolonia-symbol_1.png'
     img.style.width = '16px'
     img.style.height = '16px'
     img.style.display = 'block'
     img.style.cursor = 'pointer'
-    img.alt = "TileCloud"
+    img.alt = "Geolonia"
 
     const link = document.createElement('a')
-    link.href = "https://tilecloud.io/"
+    link.href = "https://geolonia.com/"
     link.appendChild(img)
-    link.title = "自由な地図のための地図専用ホスティングサービス"
+    link.title = "柔軟で自由度の高い位置情報ホスティング"
 
     this.container.appendChild(link)
 
@@ -32,4 +32,4 @@ class TileCloudControl {
   }
 }
 
-export default TileCloudControl;
+export default GeoloniaControl;

@@ -2,7 +2,7 @@
   "name": "@tilecloud/mbgl-tilecloud-control",
   "version": "0.3.6",
   "description": "",
-  "main": "dist/mbgl-tilecloud-control.js",
+  "main": "dist/mbgl-geolonia-control.js",
   "scripts": {
     "start": "cd docs && http-server -o",
     "watch": "parcel -d ${TMPDIR} example/index.html --open",
@@ -13,19 +13,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tilecloud/mapbox-gl-tilecloud-control.git"
+    "url": "git+https://github.com/geolonia/mapbox-gl-geolonia-control.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tilecloud/mbgl-tilecloud-control/issues"
+    "url": "https://github.com/geolonia/mbgl-geolonia-control/issues"
   },
-  "homepage": "https://github.com/tilecloud/mbgl-tilecloud-control#readme",
+  "homepage": "https://github.com/geolonia/mbgl-geolonia-control#readme",
   "devDependencies": {
-    "@tilecloud/mbgl-fork-me-control": "^0.2.5",
     "eslint": "^5.16.0",
     "http-server": "^0.11.1",
-    "microbundle": "^0.6.0",
+    "microbundle": "^0.11.0",
     "parcel": "^1.12.3"
+  },
+  "dependencies": {
+    "@geolonia/mbgl-fork-me-control": "^0.2.7"
   }
 }
