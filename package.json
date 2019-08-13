@@ -1,6 +1,6 @@
 {
   "name": "@geolonia/mbgl-geolonia-control",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "description": "",
   "main": "dist/mbgl-geolonia-control.js",
   "scripts": {
