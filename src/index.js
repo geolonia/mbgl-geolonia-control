@@ -11,12 +11,15 @@ class GeoloniaControl {
     img.style.height = '16px'
     img.style.display = 'block'
     img.style.cursor = 'pointer'
+    img.style.padding = '0'
+    img.style.margin = '0'
+    img.style.border = 'none'
     img.alt = "Geolonia"
 
     const link = document.createElement('a')
     link.href = "https://geolonia.com/"
     link.appendChild(img)
-    link.title = "柔軟で自由度の高い位置情報ホスティング"
+    link.title = "Powered by Geolonia"
 
     this.container.appendChild(link)
 
