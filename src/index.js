@@ -6,7 +6,7 @@ class GeoloniaControl {
     this.container.className = 'mapboxgl-ctrl'
 
     const img = document.createElement('img')
-    img.src = 'https://geolonia.github.io/logo/geolonia-symbol_1.png'
+    img.src = 'https://cdn.geolonia.com/logo/geolonia-symbol_1.png'
     img.style.width = '16px'
     img.style.height = '16px'
     img.style.display = 'block'
