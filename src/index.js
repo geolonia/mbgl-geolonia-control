@@ -3,7 +3,7 @@
 class GeoloniaControl {
   onAdd() {
     this.container = document.createElement('div')
-    this.container.className = 'mapboxgl-ctrl'
+    this.container.className = 'maplibregl-ctrl'
 
     const img = document.createElement('img')
     img.src = 'https://cdn.geolonia.com/logo/geolonia-symbol_1.png'
